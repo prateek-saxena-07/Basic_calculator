@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container" >
+        <div class="case" id="Calc">
+            <div class="display">
+                <input type="text" id="res">
+                <button onClick="Clear()">Clear</button>
+                <button value="←" onClick="Back('←')">←</button>
+            </div>
+            <div class="buttons">
+                <div class="num-btn-grid">
+                    <button  value="1" onClick="dis('1')" >1</button>
+                    <button  value="2" onClick="dis('2')" >2</button>
+                    <button  value="3" onClick="dis('3')" >3</button>
+                    <button  value="4" onClick="dis('4')" >4</button>
+                    <button  value="5" onClick="dis('5')" >5</button>
+                    <button  value="6" onClick="dis('6')" >6</button>
+                    <button  value="7" onClick="dis('7')" >7</button>
+                    <button  value="8" onClick="dis('8')" >8</button>
+                    <button  value="9" onClick="dis('9')" >9</button>
+                    
+                    <button id="zero" value="0" onClick="dis('0')">0</button>
+                </div>
+                <div class="op-btn-grid">
+                    <button  value="+" onClick="dis('+')" >+</button>
+                    <button  value="-" onClick="dis('-')" >-</button>
+                    <button  value="*" onClick="dis('*')" >*</button>
+                    <button  value="/" onClick="dis('/')" >/</button>
+                    <button  value="%" onClick="dis('%')" >%</button>
+                    <button  value="=" onClick="Solve()" >=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js">
+        
+    </script>
+</html>
